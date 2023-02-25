@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 
 app.get("/", (req, res) => { 
-    res.send("Welcome On Purplle");
+    res.send("Welcome On Purple!");
 })
 
 app.use("/users", userRouter)

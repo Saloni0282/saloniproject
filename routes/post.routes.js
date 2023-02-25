@@ -18,11 +18,6 @@ postRouter.post('/top', async (req, res) => {
     const post = new PostModel(payload);
     await post.save();
     res.send({ status: 'Post created successfully' });
-    // const { no_if_comments } = req.body;
-    // console.log(userId);
-    // const posts = await PostModel.find({ userId });
-    // res.send(posts);
-
     
 })
 
